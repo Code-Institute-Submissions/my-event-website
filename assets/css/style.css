@@ -1,0 +1,77 @@
+/*------------------------------------Colors*/
+
+/*------------------------------------Utils*/
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-block {
+    display: block;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+/*------------------------------------Header*/
+
+body, html{
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    padding: 15px 0 25px 0;
+    min-height: 40px;
+    width: 100%;
+    background-color: #f4f4f4;
+    
+}
+
+header .d-inline-block {
+    width: inherit;
+}
+
+#nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #525252;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+#nav ul li a:hover {
+    background-color: #525252;
+    color: #f4f4f4;
+    transition: all .5s ease-in-out;
+}
+
+section {
+   height: 100px; 
+   padding-top: 50px; 
+}
+
+
+/*------------------------------------Footer*/
+
+footer {
+    padding: 15px 0 15px 0px;
+    box-sizing:border-box;
+    min-height: 50px;
+    width: 100%;
+    background-color: #f4f4f4;    
+}
