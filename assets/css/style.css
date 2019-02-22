@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 /*------------------------------------Colors*/
 
 /*------------------------------------Utils*/
@@ -35,7 +36,6 @@ body, html{
 
 header {
     position: fixed;
-    padding: 15px 0 25px 0;
     min-height: 40px;
     width: 100%;
     background-color: #f4f4f4;
@@ -46,23 +46,50 @@ header .d-inline-block {
     width: inherit;
 }
 
-#nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: #525252;
-    font-family: sans-serif;
-    font-weight: 300;
+.footer-element,
+.head-element {
+    width: 100%;
+    padding-right: 25px;
 }
 
-#nav ul li a:hover {
-    background-color: #525252;
-    color: #f4f4f4;
+.head-element {
+    padding-top: 25px;
+}
+
+.head-element span {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 16px  
+}
+
+.footer-element span {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 12px   
+}
+
+.footer-element a,
+.head-element a {
+    text-decoration: none;
+    color: #525252;
+    border-bottom: 0px solid gold;
+
+}
+
+.footer-element a:hover,
+.head-element a:hover {
+    color: black;
+    border-bottom: 1px solid gold;
+    margin-bottom:-1px;
     transition: all .5s ease-in-out;
 }
 
+
+
+
 section {
    height: 100px; 
-   padding-top: 50px; 
+   padding-top: 80px; 
 }
 
 
