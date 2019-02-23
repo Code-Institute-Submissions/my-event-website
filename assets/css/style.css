@@ -27,7 +27,24 @@
     text-transform: uppercase;
 }
 
+/*----------------------------General--Utils-*/
 
+.square {
+    height: 50px;
+    width: 50px;
+    
+}
+button p {
+    width: 50px;
+}
+
+h1, h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display", sans-serif;    
+}
+
+h1 {
+    margin-top: 10px;
+}
 /*------------------------------------Header*/
 
 body, html{
@@ -39,11 +56,18 @@ header {
     min-height: 40px;
     width: 100%;
     background-color: #f4f4f4;
+    z-index: 1200;
     
 }
 
 header .d-inline-block {
     width: inherit;
+}
+
+.presentation {
+    width: 33.3%;
+    padding: 0 0 9px 0;
+    margin-bottom 9px;
 }
 
 .footer-element,
@@ -82,14 +106,21 @@ header .d-inline-block {
     border-bottom: 1px solid gold;
     margin-bottom:-1px;
     transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    
 }
 
 
-
+/*-----------------------------------Section*/
 
 section {
-   height: 100px; 
-   padding-top: 80px; 
+   padding: 80px 0 20px 0; 
+   background: url(https://c.pxhere.com/photos/e9/90/photo-74940.jpg!d);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
 }
 
 
