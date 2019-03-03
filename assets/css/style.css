@@ -29,11 +29,10 @@
 
 /*----------------------------General--Utils-*/
 
-.square {
-    height: 50px;
-    width: 50px;
-    
+.no-padding {
+    padding: 0;
 }
+
 button p {
     width: 50px;
 }
@@ -45,6 +44,19 @@ h1, h2,h3,h4,h5,h6 {
 h1 {
     margin-top: 10px;
 }
+
+.custom-underline {
+    min-height: 1px;
+    border-bottom: 1.5px solid gold;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.spacer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /*------------------------------------Header*/
 
 body, html{
@@ -52,7 +64,7 @@ body, html{
 }
 
 header {
-    position: fixed;
+
     min-height: 40px;
     width: 100%;
     background-color: #f4f4f4;
@@ -64,10 +76,20 @@ header .d-inline-block {
     width: inherit;
 }
 
-.presentation {
-    width: 33.3%;
-    padding: 0 0 9px 0;
-    margin-bottom 9px;
+.panel-custom-heading,
+.panel {
+   background-color: rgba(211,211,211,0.7);
+}
+
+.panel-body {
+    background-color: rgba(244,244,244, 0.6); 
+}
+
+.panel-custom-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .footer-element,
@@ -115,7 +137,7 @@ header .d-inline-block {
 
 /*-----------------------------------Section*/
 
-section {
+.section-first {
    padding: 80px 0 20px 0; 
    background: url(https://c.pxhere.com/photos/e9/90/photo-74940.jpg!d);
    background-repeat: no-repeat;
@@ -123,6 +145,49 @@ section {
    background-position: center;
 }
 
+.btn-signin-custom {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin-bottom: 0;
+    font-family: "Playfair Display", sans-serif;  
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #525252;
+    text-align: center;
+    white-space: nowrap;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1.5px solid gold;
+    border-radius: 50%;
+}
+
+.custom-wrap-border {
+    display: inline-block;
+    background-color: rgba(211,211,211,0.7);
+    vertical-align: middle;
+    border: 1.5px solid gold;
+    border-radius: 10px;
+}
+
+.custom-wrap-border a {
+    font-family: "Playfair Display", sans-serif;  
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #525252;
+    margin-top: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+}
 
 /*------------------------------------Footer*/
 
@@ -132,4 +197,22 @@ footer {
     min-height: 50px;
     width: 100%;
     background-color: #f4f4f4;    
+}
+
+/*------------------------------------Media-Queries*/
+@media (min-width: 1200px) { 
+    .presentation {
+        width: 30%;
+        
+    }
+    .custom-wrap-border {
+        opacity: 0;
+    }
+    .sign-in-wrap:hover .custom-wrap-border{
+        opacity: 1;
+        transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+    }
 }
