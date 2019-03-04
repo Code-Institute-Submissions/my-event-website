@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
-/*------------------------------------Colors*/
+/*----------------------------------Colors--*/
 
-/*------------------------------------Utils*/
+.bg-color-header {
+    background-color: #f4f4f4;
+}
+/*----------------------------------Utils--*/
 
 .d-inline-block {
     display: inline-block;
@@ -27,7 +30,14 @@
     text-transform: uppercase;
 }
 
-/*----------------------------General--Utils-*/
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+
+/*----------------------------General--*/
 
 .no-padding {
     padding: 0;
@@ -37,12 +47,17 @@ button p {
     width: 50px;
 }
 
-h1, h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: "Playfair Display", sans-serif;    
 }
 
-h1 {
-    margin-top: 10px;
+p {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 16px;
+}
+
+.bolder {
+    font-weight: 700;
 }
 
 .custom-underline {
@@ -57,45 +72,31 @@ h1 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/*------------------------------------Header*/
+
+.embedded-content-big {
+    height: 200px;
+    width: 250px;
+    
+}
+/*-----------------------------Header--*/
 
 body, html{
     height: 100%;
 }
 
 header {
-
     min-height: 40px;
     width: 100%;
-    background-color: #f4f4f4;
-    z-index: 1200;
-    
 }
 
 header .d-inline-block {
     width: inherit;
 }
 
-.panel-custom-heading,
-.panel {
-   background-color: rgba(211,211,211,0.7);
-}
-
-.panel-body {
-    background-color: rgba(244,244,244, 0.6); 
-}
-
-.panel-custom-heading {
-    padding: 10px 15px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-}
-
+/*-------------------------header--footer-elements--*/
 .footer-element,
 .head-element {
     width: 100%;
-    padding-right: 25px;
 }
 
 .head-element {
@@ -125,7 +126,7 @@ header .d-inline-block {
 .footer-element a:hover,
 .head-element a:hover {
     color: black;
-    border-bottom: 1px solid gold;
+    border-bottom: 1.5px solid gold;
     margin-bottom:-1px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -135,14 +136,30 @@ header .d-inline-block {
 }
 
 
-/*-----------------------------------Section*/
+/*---------------------------------Section--*/
 
-.section-first {
-   padding: 80px 0 20px 0; 
+.first-section {
+   padding: 80px 0 25px 0; 
    background: url(https://c.pxhere.com/photos/e9/90/photo-74940.jpg!d);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
+}
+
+.panel-custom-heading,
+.panel {
+   background-color: rgba(211,211,211,0.7);
+}
+
+.panel-body {
+    background-color: rgba(244,244,244, 0.6); 
+}
+
+.panel-custom-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .btn-signin-custom {
@@ -189,7 +206,26 @@ header .d-inline-block {
     text-decoration: none;
 }
 
-/*------------------------------------Footer*/
+.second-section {
+    padding: 40px 0 25px 0;
+    background-color: gold;
+}
+
+.custom-line {
+    height: 1.5px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+.embedded-wrapper{
+    min-width: 200px;
+    width: 50%;
+}
+
+/*----------------------------------Footer--*/
 
 footer {
     padding: 15px 0 15px 0px;
@@ -199,7 +235,7 @@ footer {
     background-color: #f4f4f4;    
 }
 
-/*------------------------------------Media-Queries*/
+/*----------------------------------Media-Queries--*/
 @media (min-width: 1200px) { 
     .presentation {
         width: 30%;

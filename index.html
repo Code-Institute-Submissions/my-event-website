@@ -13,7 +13,7 @@
     <title>My Event Website - Wedding Party</title>
 </head>
 <body>
-    <header class="header container-fluid">
+    <header class="header container-fluid bg-color-header">
         <div class="row">
             <div class="col-xs-4 col-md-4 logo">
                 Logo
@@ -21,8 +21,8 @@
             <div class="col-xs-4 col-xs-offset-8 col-md-4 col-md-offset-0 text-center">
                 <nav id="nav">
                     <ul class="list-inline">
-                        <li class="uppercase">
-                                <div class="head-element text-center">
+                        <li class="uppercase float-left">
+                                <div class="head-element">
                                     <a href="#">
                                         <span>home</span>
                                     </a>
@@ -31,14 +31,14 @@
                         <li class="uppercase">
                             <div class="head-element text-center">
                                 <a href="#">
-                                    <span>Pag1</span>
+                                    <span>Log In</span>
                                 </a>
                             </div>
                         </li>
-                        <li class="uppercase">
+                        <li class="uppercase float-right">
                             <div class="head-element text-center">
                                 <a href="#">
-                                    <span>Pag2</span>
+                                    <span>Support</span>
                                 </a>
                             </div>
                         </li>
@@ -54,7 +54,7 @@
             </div>
         </div>
     </header>
-    <section class="section-first container-fluid">
+    <section class="first-section container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <div class="presentation panel panel-default center-block text-center">
@@ -67,19 +67,19 @@
                             <div class="panel-body">
                                 <ul class="list-unstyled">
                                     <li>
-                                        <h4>Create a community for your Wedding Party!</h4>
+                                        <p>Create a community for your Wedding Party!</p>
                                     </li>
                                     <li>
-                                        <h4>Share your partecipation card</h4>
+                                        <p>Share your partecipation card</p>
                                     </li>
                                     <li>
-                                        <h4>Let them get all they need from your "event room"</h4>
+                                        <p>with your family and friends</p>
                                     </li>
                                     <li>
-                                        <h4>with your family and friends</h4>
+                                        <p>Let them get all they need from your "event room"</p>
                                     </li>
                                     <li>
-                                        <h4>And let them share video, music and pictures</h4>
+                                        <p>And let them share video, music and pictures</p>
                                     </li>
                                 </ul>
                             </div>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="row">
                             <div class="col-xs-12 col-md-12 spacer">
-                                <h4 class="uppercase">Sign in your workspace and start sharing!</h4>
+                                <p class="uppercase bolder">Sign in your workspace and start sharing!</p>
                                 <div class="custom-underline"></div>
                             </div>
                     </div>
@@ -122,13 +122,13 @@
                         <div class="col-xs-12 col-md-12 spacer">
                             <ul class="list-unstyled">
                                 <li>
-                                    <h4>Do you already have an account</h4>
+                                    <p>Do you already have an account?</p>
                                 </li>
                                 <li>
-                                    <h4>are you an event guest?</h4>
+                                    <p>Are you an event guest?</p>
                                 </li>
                                 <li>
-                                    <h4 class="uppercase">Just hit Log In and have fun!</h4>
+                                    <p class="uppercase bolder">Just hit Log In and have fun!</p>
                                     <div class="custom-underline"></div>
                                 </li>
                             </ul>
@@ -138,12 +138,30 @@
             </div>
         </div>
     </section>
-    <section class="section container-fluid">
+    <section class="second-section container-fluid">
         <div class="content-wrap">
             <div class="row">
-                <div class="col-xs-12 col-md-4">video</div>
-                <div class="col-xs-12 col-md-4">music</div>
-                <div class="col-xs-12 col-md-4">pics</div>
+                <div class="col-xs-12 col-md-12">
+                    <p class="uppercase text-center">share your contents with your guests...</p>
+                    <div class="custom-line"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <p class="uppercase text-center">Your Videos</p>
+                    <div class="center-block embedded-wrapper">
+                        <video class="embedded-content-big" type="video/mp4" controls >
+                            <source src="/assets/videos/TheMonkees.mp4#t=0.5">
+                           <track src="/assets/videos/example-video.vtt"
+                                  label="Example Video"
+                                  kind="descriptions">
+                           </track>
+                            Your browser currently does not support this video feature. 
+                        </video>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4"><p class="uppercase text-center">Party Locations</p></div>
+                <div class="col-xs-12 col-md-4"><p class="uppercase text-center">Your Pictures</p></div>
             </div>
         </div>
     </section>
