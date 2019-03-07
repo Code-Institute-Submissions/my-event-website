@@ -4,6 +4,11 @@
 .bg-color-header {
     background-color: #f4f4f4;
 }
+
+.bg-color-gold {
+    background-color: gold;
+}
+
 /*----------------------------------Utils--*/
 
 .d-inline-block {
@@ -16,6 +21,15 @@
 
 .d-block {
     display: block;
+}
+
+.d-table {
+    display: table;
+}
+
+.d-table-cell {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .absolute {
@@ -37,6 +51,15 @@
     float: left;
 }
 
+.bolder {
+    font-weight: 600;
+}
+
+.spacer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 /*----------------------------General--*/
 
 .no-padding {
@@ -56,9 +79,10 @@ p {
     font-size: 16px;
 }
 
-.bolder {
-    font-weight: 700;
+span {
+  line-height: 1.6;  
 }
+
 
 .custom-underline {
     min-height: 1px;
@@ -68,10 +92,6 @@ p {
     padding: 0;
 }
 
-.spacer {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
 
 .embedded-content-big {
     height: 175px;
@@ -225,6 +245,7 @@ option {
 .second-section {
     padding: 30px 0 25px 0;
     background-color: gold;
+    min-height: 400px;
 }
 
 .custom-line {
@@ -241,6 +262,26 @@ option {
     width: 50%;
 }
 
+.third-section {
+    padding: 0 0 30px 0;
+    min-height: 400px;
+}
+
+.comments {
+    padding: 20px 0 40px 0; 
+}
+
+.follow-us {
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 25%;
+    min-height: 40px;
+    width: 250px;
+}
+
+.follow-us div span {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
 /*----------------------------------Footer--*/
 
 footer {
@@ -263,7 +304,6 @@ footer {
     display: block;
     width: 45%;
     height: 35px;
-    /* padding: 6px 12px; */
     font-size: 14px;
     line-height: 1.42857143;
     color: #525252;
