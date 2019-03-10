@@ -10,32 +10,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Event Website - Wedding Party</title>
+    <title>Wedd'Up - For Your Wedding Party!</title>
+    <link rel='shortcut icon' href='/assets/images/LogoImg.ico' type='image/x-icon'>
+    <link rel='icon' href='/assets/images/LogoImg.ico' type='image/x-icon'>
 </head>
 <body>
     <header class="header container-fluid bg-color-header">
-        <div class="row">
-            <div class="col-xs-4 col-md-4 logo">
-                Logo
+        <div class="no-margin row">
+            <div class="col-xs-4 col-xs-push-4 col-md-4 logo no-padding">
+                <a href="index.html">
+                    <img src="/assets/images/WeddUpLogo.png"></img>
+                </a>
             </div>
-            <div class="col-xs-4 col-xs-offset-8 col-md-4 col-md-offset-0 text-center">
+            <div class="col-xs-4 col-xs-pull-4 col-md-4 text-center no-padding">
+                <label class="btn btn-custom-header-menu" for="btnControl"><i class="fa fa-bars"></i></label>
+                <input class="d-none" type="checkbox" id="btnControl"/>
+                
                 <nav id="nav">
-                    <ul class="list-inline">
-                        <li class="uppercase float-left">
+                    <ul>
+                        <li id="home" class="uppercase">
                                 <div class="head-element">
                                     <a href="#">
                                         <span>home</span>
                                     </a>
                                 </div>
                         </li>
-                        <li class="uppercase">
+                        <li id="login" class="uppercase">
                             <div class="head-element text-center">
                                 <a href="#">
                                     <span>Log In</span>
                                 </a>
                             </div>
                         </li>
-                        <li class="uppercase float-right">
+                        <li id="support" class="uppercase">
                             <div class="head-element text-center">
                                 <a href="#">
                                     <span>Support</span>
@@ -45,8 +52,8 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="head-element text-right">
+            <div class="col-xs-4 col-md-4 no-padding">
+                <div class="uppercase text-right whatis">
                     <a href="#">
                         <span >What is?</span>
                     </a>
@@ -55,7 +62,7 @@
         </div>
     </header>
     <section class="first-section container-fluid">
-        <div class="row">
+        <div class="no-margin row">
             <div class="col-xs-12 col-md-12">
                 <div class="presentation panel panel-default center-block text-center">
                     <div class="panel-custom-heading">
@@ -140,13 +147,13 @@
     </section>
     <section class="second-section container-fluid">
         <div class="content-wrap">
-            <div class="row">
+            <div class="no-margin row">
                 <div class="col-xs-12 col-md-12">
                     <p class="uppercase text-center">share your contents with your guests...</p>
                     <div class="custom-line"></div>
                 </div>
             </div>
-            <div class="row">
+            <div class="no-margin row">
                 <div class="col-xs-12 col-md-4">
                     <p class="uppercase text-center">Your Videos</p>
                     <div class="center-block spacer embedded-wrapper">
@@ -174,7 +181,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="no-margin row">
                 <div class="col-xs-12 col-md-12">
                     <div class="spacer"><p class="uppercase text-center">and more...</p></div>
                 </div>
@@ -182,7 +189,7 @@
         </div>
     </section>
     <section class="third-section container-fluid">
-        <div class="row">
+        <div class="no-margin row">
             <div class="col-xs-12 col-md-4 comments">
                 <article class="article center-block spacer embedded-wrapper">
                     <header class="article-header">-AppReviews.com</header>
@@ -209,7 +216,7 @@
                 </article>
             </div>
         </div>
-        <div class="row">
+        <div class="no-margin row">
             <div class="col-xs-12 text-center">
                 <div class="follow-us center-block d-table bg-color-gold">
                     <div class="d-table-cell">
@@ -226,31 +233,36 @@
     <footer class="footer container-fluid">
         <!----------footer-nav---------->
         <div class="row">
-            <nav>
-                <div class="col-sx-12 col-md-3">
-                    <div class="centered-block-in-grid">
+            <nav id="footer-nav">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-lg text-alignment">
+                        <div class="footer-element footer-element-title bg-color-inverse">
+                            <span class="uppercase"><strong>Company</strong></span>
+                        </div>            
+                        <label class="footer-element-caret bg-color-inverse" for="btnControl-footer-company"><span class="caret"></label>
+                        <input class="d-none" type="checkbox" id="btnControl-footer-company"/>
                         <ul class="list-unstyled">
-                            <li class="uppercase footer-title-position">
-                                <div class="footer-element text-left"> 
-                                    <span class="footer-title-border"><strong>Company</strong></span>
+                            <li class="uppercase footer-title-position ">
+                                <div class="text-alignment"> 
+                                    <span class="footer-lg-title footer-title-border"><strong>Company</strong></span>
                                 </div>
                             </li>
                             <li class="">
-                                <div class="footer-element text-left ">
+                                <div class="footer-element text-alignment ">
                                     <a href="#">
                                         <span>Wedd'Up Ltd</span>
                                     </a>
                                 </div>
                             </li>
                             <li class="">
-                                <div class="footer-element text-left ">
+                                <div class="footer-element text-alignment ">
                                     <a href="#">
                                         <span>Join Us</span>
                                     </a>
                                 </div>
                             </li>
                             <li class="">
-                                <div class="footer-element text-left ">
+                                <div class="footer-element text-alignment ">
                                     <a href="#">
                                         <span>News</span>
                                     </a>
@@ -259,23 +271,29 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-3">
-                    <div class="centered-block-in-grid">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-lg text-alignment">
+                        <div class="footer-element footer-element-title bg-color-inverse">
+                            <span class="uppercase"><strong>Community</strong></span>
+                        </div>            
+                        <label class="footer-element-caret bg-color-inverse" for="btnControl-footer-community"><span class="caret"></label>
+                        <input class="d-none" type="checkbox" id="btnControl-footer-community"/>
+
                         <ul class="list-unstyled">
-                            <li class="uppercase footer-title-position">
-                                <div class="footer-element text-left"> 
-                                    <span class="footer-title-border"><strong>Community</strong></span>
+                            <li class="uppercase footer-title-position ">
+                                <div class="text-alignment"> 
+                                    <span class="footer-lg-title footer-title-border"><strong>Community</strong></span>
                                 </div>
                             </li>
                             <li>
-                                <div class="footer-element text-left ">
+                                <div class="footer-element text-alignment">
                                     <a href="#">
                                         <span>Your Stories</span>
                                     </a>
                                 </div>
                             </li>
                             <li>
-                                <div class="footer-element text-left ">
+                                <div class="footer-element text-alignment">
                                     <a href="#">
                                         <span>Wedd'Blog</span>
                                     </a>
@@ -284,23 +302,28 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-3">
-                    <div class="centered-block-in-grid">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-lg text-alignment">
+                        <div class="footer-element footer-element-title bg-color-inverse">
+                            <span class="uppercase"><strong>Help</strong></span>
+                         </div>
+                        <label class="footer-element-caret bg-color-inverse" for="btnControl-footer-help"><span class="caret"></label>
+                        <input class="d-none" type="checkbox" id="btnControl-footer-help"/>
                         <ul class="list-unstyled">
-                            <li class="uppercase footer-title-position">
-                                <div class="footer-element text-left"> 
-                                    <span class="footer-title-border"><strong>Help</strong></span>
+                            <li class="uppercase footer-title-position ">
+                                <div class="text-alignment"> 
+                                    <span class="footer-lg-title footer-title-border"><strong>Help</strong></span>
                                 </div>
                             </li>
                             <li>
-                                <div class="footer-element text-left ">
+                                <div class="footer-element text-alignment ">
                                     <a href="#">
                                         <span>Support Contacts</span>
                                     </a>
                                 </div>
                             </li>
                             <li>
-                                <div class="footer-element text-left ">
+                                <div class="footer-element text-alignment ">
                                     <a href="#">
                                         <span>How To's</span>
                                     </a>
@@ -309,30 +332,35 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-3">
-                    <div class="centered-block-in-grid">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-lg text-alignment">
+                        <div class="footer-element footer-element-title bg-color-inverse">
+                            <span class="uppercase"><strong>Legal</strong></span>
+                        </div>
+                        <label class="bg-color-inverse footer-element-caret" for="btnControl-footer-legal"><span class="caret"></label>
+                        <input class="d-none" type="checkbox" id="btnControl-footer-legal"/>
                         <ul class="list-unstyled">
                             <li class="uppercase footer-title-position ">
-                                <div class="footer-element text-left"> 
-                                    <span class="footer-title-border"><strong>Legal</strong></span>
+                                <div class="text-alignment"> 
+                                    <span class="footer-lg-title footer-title-border"><strong>Legal</strong></span>
                                 </div>
                             </li>
                             <li>
-                                <div class="footer-element text-left ">
+                                <div class="footer-element text-alignment ">
                                     <a href="#">
                                         <span>Privacy Policies</span>
                                     </a>
                                 </div>
                             </li>
                             <li>
-                                <div class="footer-element text-left ">
+                                <div class="footer-element text-alignment ">
                                     <a href="#">
                                         <span>Cookies</span>
                                     </a>
                                 </div>
                             </li>
                             <li>
-                                <div class="footer-element text-left ">
+                                <div class="footer-element text-alignment ">
                                     <a href="#">
                                         <span>Terms & Conditions</span>
                                     </a>
@@ -345,9 +373,9 @@
         </div>
         <!---------end-footer-nav---------->
         <div class="row spacer">
-            <div class="col-xs-3 col-md-3">
-                <div class="centered-block-in-grid language-select">
-                    <label class="footer-title-position" for="lang"><span class="uppercase footer-title-border"><strong>language</strong></span></label>
+            <div class="col-xs-12 col-md-3">
+                <div class="footer-element language-select text-alignment footer-lg">
+                    <label for="lang"><span class="uppercase footer-title-border"><strong>language</strong></span></label>
                     <select class="custom-select" name="language" id="lang">
                         <option>English</option>
                         <option>Italiano</option>
