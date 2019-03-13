@@ -1,0 +1,15 @@
+.input-group-addon:first-child {
+    width: 125px;
+}
+
+.input-group .form-control {
+    width: 290px
+}
+
+.form-underline {
+    min-height: 1px;
+    border-bottom: 1.5px solid gold;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
