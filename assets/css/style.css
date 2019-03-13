@@ -249,16 +249,16 @@ header .d-inline-block {
     border-top-right-radius: 3px;
 }
 
-.btn-signin-custom {
+.btn-rounded-shiny {
     display: inline-block;
     height: 70px;
     width: 70px;
+    color:#525252;
     margin-bottom: 0;
     font-family: "Playfair Display", sans-serif;  
     font-size: 16px;
     font-weight: 600;
     line-height: 1.42857143;
-    color: #525252;
     text-align: center;
     white-space: nowrap;
     -ms-touch-action: manipulation;
@@ -271,6 +271,29 @@ header .d-inline-block {
     background-image: none;
     border: 1.5px solid gold;
     border-radius: 50%;
+}
+
+.signup {
+    text-decoration: none;
+    color: #525252 ;
+}
+
+.signup:hover {
+    text-decoration: none;
+}
+
+.btn-rounded-shiny:hover {
+    text-decoration: none;
+    color: black;
+    
+    -webkit-box-shadow: inset 10px 10px 148px 10px rgba(255,215,0,0.2), 10px 10px 148px 10px rgba(255,215,0,0.8);
+    -moz-box-shadow: inset 10px 10px 148px 10px rgba(255,215,0,0.2), 10px 10px 148px 10px rgba(255,215,0,0.8);
+    box-shadow: inset 10px 10px 148px 10px rgba(255,215,0,0.2), 10px 10px 148px 10px rgba(255,215,0,0.8);
+    
+    transition: all 5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
 }
 
 .custom-wrap-border {

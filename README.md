@@ -5,7 +5,9 @@
 
 1st assignment - Tech used: Html5, Css3, Bootstrap 3.3.7
 
-Please note: this is a simpler version of my idea  
+Please note: this is a simpler version of my idea as to have all contents now 
+
+would be out of scope.
 
 throughout the course will be implemented with backend resources and Javascript  
 

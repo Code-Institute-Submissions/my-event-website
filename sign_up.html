@@ -26,7 +26,7 @@
                     <ul>
                         <li id="home" class="uppercase">
                                 <div class="head-element">
-                                    <a href="#">
+                                    <a href="index.html">
                                         <span>home</span>
                                     </a>
                                 </div>
@@ -75,23 +75,23 @@
                             <div class="row">
                                 <div class="col-xs-12 col-md-12">
                                     <div class="panel-body">
-                                        <form>
+                                        <form action="#" method="post">
                                             <div class="row">
-                                                <div class="col-xs-12 col-md-12">
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon" id="name">Name :</span>
+                                                <div class="col-xs-12 col-md-12 ">
+                                                    <div class="input-group centered">
+                                                        <span class="custom-input-group-addon" id="name">Name :</span>
                                                         <input type="text" name="name" class="form-control" aria-describedby="name"/>
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-md-12">
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon" id="name">Surname :</span>
+                                                    <div class="input-group centered">
+                                                        <span class="custom-input-group-addon" id="name">Surname :</span>
                                                         <input type="text" name="name" class="form-control" aria-describedby="name"/>
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-md-12">
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon" id="name">Email Address :</span>
+                                                    <div class="input-group centered">
+                                                        <span class="custom-input-group-addon" id="name">Email Address :</span>
                                                         <input type="email" name="name" class="form-control" aria-describedby="name" required/>
                                                     </div>
                                                 </div>
@@ -101,11 +101,11 @@
                                                     <div class="form-underline spacer"></div>
                                                 </div>
                                                 <div class="col-xs-12 col-md-12">
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon">
-                                                            <input type="checkbox" name="news-letter" aria-label="news-letter"/>
+                                                    <div class="input-group centered spacer">
+                                                        <span class=".custom-input-group-addon-short">
+                                                            <input type="checkbox" id="newsletter" name="news-letter" aria-label="newsletter"/>
                                                         </span>
-                                                        <span class="d-table-cell">test</span>
+                                                        <span class="d-table-cell">Do you want to receive our Newsletter?</span>
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-md-12 text-center">
@@ -113,7 +113,14 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <button type="submit" class="btn btn-default">Submit</button>
+                                                <div class="col-xs-12 col-md-12">
+                                                    <article class="centered spacer">
+                                                        <a href="#" class="privacy-reminder">Your data will never be used outside the boundaries of our strictly privacy rules.</a>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="row spacer">
+                                                <button class="btn-rounded-shiny" type="submit" class="btn btn-default">Submit</button>
                                             </div>
                                         </form>
                                     </div>
