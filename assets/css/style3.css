@@ -1,0 +1,13 @@
+.d-table-row-separate {
+    display: table-row;
+    border-collapse:separate;
+    
+}
+.control-menu {
+    border-spacing: 50px;  
+}
+
+.control-menu-btn{
+    display: table-cell;
+
+}
