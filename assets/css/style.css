@@ -169,6 +169,11 @@ header .d-inline-block {
     display: block;
     top: 38px;
     z-index: 2;
+    
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
 }
 
 .whatis {
@@ -384,7 +389,7 @@ header .d-inline-block {
 
 /*----------------------------------Footer--*/
 
-footer {
+.footer {
     padding: 40px 0 15px 0px;
     box-sizing:border-box;
     min-height: 50px;
@@ -515,7 +520,6 @@ option{
     
     #nav ul li {
         display: inline-block;
-        margin-right: 5px;
         border-bottom: 0px solid transparent;
     }
     

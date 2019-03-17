@@ -62,28 +62,263 @@
             </div>
         </div>
     </header>
-    <section class="container-fluid">
+    <section class="container-fluid main-section no-padding">
         <div class="row">
-            <div class="col-xs-12 col-md-3">
-                <div class="center-block control-menu d-table">
-                    <div class="d-table-row-separate">
-                        <button class="btn btn-success center-block control-menu-btn uppercase">profile</button>
-                    </div>
-                    <div class="d-table-row-separate">
-                        <button class="btn btn-success center-block control-menu-btn uppercase">guests</button>
-                    </div>
-                </div>
+            <div class="hidden-xs hidden-md col-12-lg">
+                
             </div>
-            <div class="col-xs-12 col-xs-push col-md-6">card</div>
-            <div class="col-xs-12 col-xs-pull col-md-3">
-                <div class="center-block control-menu d-table">
-                    <div class="d-table-row-separate">
-                        <button class="btn btn-success center-block control-menu-btn uppercase">All contents</button>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12 no-padding">
+                <header class="">
+                    <div class="row">
+                        <div class="hidden-xs hidden-sm hidden-md col-lg-3">
+                            <div class="control-menu control-menu-head d-table">
+                                <div class="d-table-row-separate">
+                                    <div class="relative">
+                                      <label class="btn btn-custom-control-menu center-block control-menu-btn uppercase" for="profile-menu" aria-haspopup="true" aria-expanded="true">
+                                        Profile
+                                      </label>
+                                      <input class="d-none" type="checkbox" name="left-menu" id="profile-menu"/>
+                                      <div class="side-menu left-menu profile" aria-labelledby="profile-menu">
+                                          <div class="row">
+                                                <div class="col-xs-4 col-md-4 text-center">
+                                                    <div class="content-wrapper">
+                                                        <label for="my-profile">Profile image</label>
+                                                        <img src="https://media.licdn.com/dms/image/C5603AQHUrpA5rZ0-pA/profile-displayphoto-shrink_200_200/0?e=1556755200&v=beta&t=kXAggZ9pNSsqulj9Qw8iec84NIEAF9e1__69NVxApIM" id="my-profile"></img>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4 col-md-4">
+                                                    <div class="table-wrapper">
+                                                        <table class="table table-hover table-condensed">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Broom</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Name: Salvatore</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Surname: Fiengo</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Table: The Great Lebowsky</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4 col-md-4">
+                                                    <div class="table-wrapper">
+                                                        <table class="table table-hover table-condensed">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Video Shared:</td>
+                                                                <td>0</td>
+                                                                <td>Stars:</td>
+                                                                <td>0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Picture Shared:</td>
+                                                                <td>2</td>
+                                                                <td>Stars:</td>
+                                                                <td>3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Music Shared</td>
+                                                                <td>1</td>
+                                                                <td>Stars:</td>
+                                                                <td>5!</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    </div>
+                                                </div>
+                                          </div>
+                                      </div>
+                                      <div class="spacer"></div>
+                                      <label class="btn btn-custom-control-menu center-block control-menu-btn uppercase" for="guests-menu" aria-haspopup="true" aria-expanded="true">
+                                        Guests
+                                      </label>
+                                      <input class="d-none" type="checkbox" name="left-menu" id="guests-menu"/>
+                                      <div class="side-menu left-menu guests" aria-labelledby="guests-menu">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <table class="table table-hover table-responsive guests-table">
+                                                        <thead class="">
+                                                            <tr>
+                                                                <th>
+                                                                    <p>Table Name</p> 
+                                                                </th>
+                                                                <th>
+                                                                    <p>Guests</p> 
+                                                                </th> 
+                                                                <th>
+                                                                    <p>NickName</p> 
+                                                                </th>
+                                                                <th>
+                                                                    <p>Online Status</p> 
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><p>The Great Lebowsky</p></td>
+                                                                <td><p>Giacomo Guilizzoni</p></td>
+                                                                <td><p>"The Beast"</p></td>
+                                                                <td class="text-center"><p><i class="fa fa-lg fa-circle circle-online"></i></p></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><p>Amarcord</p></td>
+                                                                <td><p>Marco Botton</p></td>
+                                                                <td><p>"TuttoFare"</p></td>
+                                                                <td class="text-center"><p><i class="fa fa-lg fa-circle circle-offline"></i></p></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><p>Amarcord</p></td>
+                                                                <td><p>Valery Liberty</p></td>
+                                                                <td><p>"Val"</p></td>
+                                                                <td class="text-center"><p><i class="fa fa-lg fa-circle circle-online"></i></p></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><p>Frankeinstein Junior</p></td>
+                                                                <td><p>Maria Machlachan</p></td>
+                                                                <td><p>"Better Half"</p></td>
+                                                                <td class="text-center"><p><i class="fa fa-lg fa-circle-thin"></i></p></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="invitation-wrapper center-block">
+                                <div class="invitation-card-options d-table bg-color-gold">
+                                    <div class="table-row">
+                                        <div class="d-table-cell">
+                                            <img class="invitation-card" src="/assets/images/wedding-invitation.jpg"></img>
+                                        </div>
+                                        <div class="d-table-cell">    
+                                            <div class="table-row">
+                                                <div class="d-table-cell cell-lg text-center">
+                                                    <div id="print" class="print-invitation" aria-labelledby="print-invitation"><i class="fa fa-3x fa-print"></i></div>
+                                                    <label for="print"><span>Print invitation card</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="d-table-cell cell-lg text-center">
+                                                    <div id="share-inv" class="share-invitation" aria-labelledby="share-invitation"><i class="fa fa-3x fa-share-alt"></i></div>
+                                                    <label for="share-inv"><span>Share invitation card</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="d-table-cell cell-lg text-center">
+                                                    <div id="download-inv" class="download-invitation" aria-labelledby="download-invitation"><a href="/assets/images/invitation-card.pdf" target="_blank"><i class="fa fa-3x fa-download"></i></a></div>
+                                                    <label for="download-inv"><span>Download invitation card</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-xs hidden-sm hidden-md col-lg-3">
+                            <div class="control-menu control-menu-head float-right d-table">
+                                <div class="d-table-row-separate">
+                                    <div class="relative">
+                                      <label class="btn btn-custom-control-menu center-block control-menu-btn uppercase" for="contents-menu" aria-haspopup="true" aria-expanded="true">
+                                        Contents
+                                      </label>
+                                      <input class="d-none" type="checkbox" name="contents-menu" id="contents-menu"/>
+                                      <div class="side-menu right-menu contents" aria-labelledby="contents-menu">
+                                          <div class="row">
+                                              <div class="col-xs-4 col-md-4">Picture</div>
+                                              <div class="col-xs-4 col-md-4">table</div>
+                                              <div class="col-xs-4 col-md-4">table</div>
+                                          </div>
+                                      </div>
+                                      <div class="spacer"></div>
+                                      <label class="btn btn-custom-control-menu center-block control-menu-btn uppercase" for="gallery-menu" aria-haspopup="true" aria-expanded="true">
+                                        Gallery
+                                      </label>
+                                      <input class="d-none" type="checkbox" name="gallery-menu" id="gallery-menu"/>
+                                      <div class="side-menu right-menu gallery" aria-labelledby="gallery-menu">
+                                          <div class="row">
+                                            <table class="table table-hover table-responsive">
+                                                <thead>
+                                                    <th>
+                                                        <p>table th</p> 
+                                                    </th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><p>guest</p></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-table-row-separate">
-                        <button class="btn btn-success center-block control-menu-btn uppercase">Your Gallery</button>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 hidden-md hidden-lg no-padding">
+                <footer class="section-footer no-padding">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3 hidden-lg no-padding">
+                            <div class="control-menu control-menu-foot d-table">
+                                <div class="d-table-row-separate">
+                                    <div class="relative">
+                                      <label class="btn btn-custom-control-menu center-block control-menu-btn uppercase" for="profile-menu" aria-haspopup="true" aria-expanded="true">
+                                        Profile
+                                      </label>
+                                      <input class="d-none" type="checkbox" name="left-menu" id="profile-menu"/>
+                                      <div class="side-menu left-menu" aria-labelledby="profile-menu">
+                                          <div class="row">
+                                              <div class="col-xs-4 col-md-4">Picture</div>
+                                              <div class="col-xs-4 col-md-4">table</div>
+                                              <div class="col-xs-4 col-md-4">table</div>
+                                          </div>
+                                      </div>
+                                      <div class="spacer"></div>
+                                      <label class="btn btn-custom-control-menu center-block control-menu-btn uppercase" for="guests-menu" aria-haspopup="true" aria-expanded="true">
+                                        Guests
+                                      </label>
+                                      <input class="d-none" type="checkbox" name="left-menu" id="guests-menu"/>
+                                      <div class="side-menu left-menu" aria-labelledby="guests-menu">
+                                          <div class="row">
+                                            <table class="table table-hover table-responsive">
+                                                <thead>
+                                                    <th>
+                                                        <p>table th</p> 
+                                                    </th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><p>guest</p></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-3 hidden-lg no-padding"></div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 hidden-lg no-padding"></div>
                     </div>
-                </div>
+            
+                </footer>
             </div>
         </div>
     </section>

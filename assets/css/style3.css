@@ -1,12 +1,168 @@
+.main-section {
+    height: 900px;
+    background: url(https://cdn.pixabay.com/photo/2017/10/11/16/44/wedding-feast-2841610_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .d-table-row-separate {
     display: table-row;
     border-collapse:separate;
-    
+    vertical-align: middle;
 }
+
+.control-menu-header {
+    height: 10px;
+}
+
 .control-menu {
-    border-spacing: 50px;  
+    position: relative;
+    background-color: transparent;
+    width: 10vw;
+    margin-right: 75px;
+    margin-left: 75px;
+    border-spacing: 10px 1px;
+    border: none;
+
+}
+
+.control-menu-head {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;  
 }
 
 .control-menu-btn{
     display: table-cell;
+}
+
+.btn-custom-control-menu {
+    background-color: rgba(211,211,211);
+    color: #525252;
+    width: 105px;
+    height: 55px;
+    border: 1.5px solid gold;
+    
+}
+
+.control-menu-btn + input[type=checkbox]:checked + .left-menu {
+    display: block;
+    width: 55vw;
+    height: 300px;
+    transition: all 5s ease-in-out;
+    -moz-transition: all 5s ease-in-out;
+    -webkit-transition: all 5s ease-in-out;
+    -o-transition: all 5s ease-in-out;
+}
+
+.control-menu-btn ~ input[type=checkbox]:checked + .right-menu {
+    display: block;
+    width: 55vw;
+    height: 300px;
+    transition: all 5s ease-in-out;
+    -moz-transition: all 5s ease-in-out;
+    -webkit-transition: all 5s ease-in-out;
+    -o-transition: all 5s ease-in-out;
+}
+
+.profile {
+    top: -4px;
+    left: 250px;
+}
+
+.guests {
+    top: 0;
+    left: 280px;
+}
+
+.contents {
+    top: 5px;
+    left: -935px;
+}
+
+.gallery {
+    top: 10px;
+    left: -905px;
+}
+
+.side-menu {
+    display:none;
+    position: absolute;
+    min-width: 160px;
+    width: 0;
+    height: 0;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 16px;
+    z-index: 99999;
+    background-color: #c3c3c3;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1.5px solid gold;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.invitation-card {
+    display: inline-block;
+    width: 200px;
+}
+
+.invitation-wrapper {
+    width: 450px;
+}
+
+.invitation-card-options {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 2px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.cell-lg {
+    height: 90px;
+    width: 180px
+}
+
+.cell-lg span {
+    white-space: nowrap;
+    color: #525252;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 600;
+    font-size: 10px  
+}
+
+.cell-lg i {
+    color: #525252;
+}
+
+.content-wrapper {
+    margin-top: 20px;
+    
+}
+
+.table-wrapper {
+    margin-top: 40px;
+    margin-right: 25px;
+}
+
+.guests-table thead tr th,
+.guests-table tbody tr td{
+    text-align: center;
+}
+
+.circle-online {
+    color: green;
+}
+
+.circle-offline {
+    color: red;
+}
+/*-------------------------------------------footer----*/
+
+.control-menu-foot {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;  
 }
