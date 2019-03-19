@@ -118,6 +118,8 @@ video::-webkit-media-text-track-display {
 /*-----------------------------Header--*/
 
 body, html{
+    margin: 0;
+    padding: 0;
     height: 100%;
 }
 
@@ -129,6 +131,10 @@ header {
 
 header .d-inline-block {
     width: inherit;
+}
+
+.row {
+    margin: 0;
 }
 
 .logo a > img {
