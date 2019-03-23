@@ -76,56 +76,104 @@
                                     </label>
                                     <div class="side-menu profile" aria-labelledby="profile-menu">
                                       <div class="row">
-                                            <div class="col-xs-4 col-md-4 text-center">
+                                            <div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
+                                                <div class="scroll-helper">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a href="#profile-details">
+                                                                <p>Profile details</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#guests-info">
+                                                                <p>Guests info</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-md-4 text-center">
                                                 <div class="content-wrapper">
                                                     <label for="my-profile">Profile image</label>
                                                     <img src="https://media.licdn.com/dms/image/C5603AQHUrpA5rZ0-pA/profile-displayphoto-shrink_200_200/0?e=1556755200&v=beta&t=kXAggZ9pNSsqulj9Qw8iec84NIEAF9e1__69NVxApIM" id="my-profile"></img>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-4 col-md-4">
-                                                <div class="table-wrapper">
-                                                    <table class="table table-hover table-condensed">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Broom</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Name: Salvatore</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Surname: Fiengo</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Table: </br> The Great Lebowsky</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <div class="col-xs-12 col-md-4">
+                                                <div id="profile-details" class="table-wrapper">
+                                                    <table class="table table-sm table-hover table-responsive">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">
+                                                                   #
+                                                                </th>
+                                                                <th scope="col">
+                                                                    Profile Details
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    Type:
+                                                                </th>
+                                                                <td>Groom</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    Name:
+                                                                </th>
+                                                                <td>Salvatore</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    Surname:
+                                                                </th>
+                                                                <td>Fiengo</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    Table:
+                                                                </th>
+                                                                <td>The Great Lebowsky</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-4 col-md-4">
-                                                <div class="table-wrapper">
-                                                    <table class="table table-hover table-condensed">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Video:</td>
-                                                            <td>0</td>
-                                                            <td>Stars:</td>
-                                                            <td>0</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Picture:</td>
-                                                            <td>2</td>
-                                                            <td>Stars:</td>
-                                                            <td>3</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Music:</td>
-                                                            <td>1</td>
-                                                            <td>Stars:</td>
-                                                            <td>5!</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <div class="col-xs-12 col-md-4">
+                                                <div id="guests-info" class="table-wrapper">
+                                                    <table class="table table-sm table-hover table-responsive">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">
+                                                                   #
+                                                                </th>
+                                                                <th colspan="3" scope="col">
+                                                                    Shared Contents
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">Video:</th>
+                                                                <td>0</td>
+                                                                <th scope="row">Stars:</th>
+                                                                <td>0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Picture:</th>
+                                                                <td>2</td>
+                                                                <th scope="row">Stars:</th>
+                                                                <td>3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Music:</th>
+                                                                <td>1</td>
+                                                                <th scope="row">Stars:</th>
+                                                                <td>5!</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                       </div>
@@ -150,7 +198,7 @@
                                                             <th>
                                                                 <p>NickName</p> 
                                                             </th>
-                                                            <th>
+                                                            <th class="visible-md visible-lg">
                                                                 <p>Online Status</p> 
                                                             </th>
                                                         </tr>
@@ -160,31 +208,31 @@
                                                             <td><p>The Great Lebowsky</p></td>
                                                             <td><p>Giacomo Guilizzoni</p></td>
                                                             <td><p>"The Beast"</p></td>
-                                                            <td class="text-center"><p><i class="fa fa-lg fa-circle circle-online"></i></p></td>
+                                                            <td class="visible-md visible-lg text-center"><p><i class="fa fa-lg fa-circle circle-online"></i></p></td>
                                                         </tr>
                                                         <tr>
                                                             <td><p>Amarcord</p></td>
                                                             <td><p>Marco Botton</p></td>
                                                             <td><p>"TuttoFare"</p></td>
-                                                            <td class="text-center"><p><i class="fa fa-lg fa-circle circle-offline"></i></p></td>
+                                                            <td class="visible-md visible-lg text-center"><p><i class="fa fa-lg fa-circle circle-offline"></i></p></td>
                                                         </tr>
                                                         <tr>
                                                             <td><p>Amarcord</p></td>
                                                             <td><p>Valery Liberty</p></td>
                                                             <td><p>"Val"</p></td>
-                                                            <td class="text-center"><p><i class="fa fa-lg fa-circle circle-online"></i></p></td>
+                                                            <td class="visible-md visible-lg text-center"><p><i class="fa fa-lg fa-circle circle-online"></i></p></td>
                                                         </tr>
                                                         <tr>
                                                             <td><p>Frankeinstein Junior</p></td>
                                                             <td><p>Maria Machlachan</p></td>
                                                             <td><p>"Better Half"</p></td>
-                                                            <td class="text-center"><p><i class="fa fa-lg fa-circle-thin"></i></p></td>
+                                                            <td class="visible-md visible-lg text-center"><p><i class="fa fa-lg fa-circle-thin"></i></p></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
-                                  </div>
+                                    </div>
                                     
                                     <input class="d-none" type="radio" name="radio-menu" id="card-menu" checked/>
                                     <label class="btn btn-custom-control-menu uppercase" for="card-menu" aria-haspopup="true" aria-expanded="true">
@@ -196,6 +244,8 @@
                                                 <div class="d-table-cell">
                                                     <img class="invitation-card" src="/assets/images/wedding-invitation.jpg"></img>
                                                 </div>
+                                            </div>    
+                                            <div class="table-row hidden-md hidden-lg">    
                                                 <div class="d-table-cell">    
                                                     <div class="table-row links-row">
                                                         <div class="d-table-cell cell-lg text-center">
