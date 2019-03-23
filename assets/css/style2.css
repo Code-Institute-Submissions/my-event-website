@@ -70,6 +70,6 @@
 /*--------------------------------------------media queries-------*/
 @media (min-width: 767px){
     .input-group .form-control {
-        width: 290px
+        width: 220px;
     }
 }

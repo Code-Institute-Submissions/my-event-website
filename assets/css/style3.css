@@ -6,6 +6,10 @@
     background-position: center;
 }
 
+.menu-spacer {
+    min-height: 450px;
+}
+
 .control-menu-header {
     height: 10px;
 }
@@ -48,7 +52,7 @@ input[type=radio]:checked + .btn-custom-control-menu + .side-menu {
 
 input[type=radio]:checked + .btn-custom-control-menu + .invitation-wrapper {
     display: block;
-    margin-left: -260px;
+    margin-left: -165px;
 }
 
 .btn-custom-control-menu .vertical-centered-multiple-line {
@@ -121,11 +125,10 @@ input[type=radio]:checked + .btn-custom-control-menu + .invitation-wrapper {
 
 .invitation-card {
     display: inline-block;
-    width: 260px;
+    width: 200px;
 }
 
 .invitation-card-options {
-    border-spacing: 5px 0px;
     border: 2px solid #ccc;
     border-radius: 10px;
 }
@@ -183,20 +186,30 @@ tr th p, tr td p {
 /*----------------dialog-box-----------------*/
 
 .dialog-box {
-    transform: translateY(140vh);
+    text-align:center;
 }
 
+.message {
+    min-height: 150px;
+    min-width: 400px;
+}
 /*---------------media-queries--------------*/
 
 @media (min-width: 1200px){
     
     input[type=radio]:checked + .btn-custom-control-menu + .side-menu {
         display: block;
-        width: 600px;
+        width: 614px;
         height: 250px;
         top: 60px;
         left: 50%;
-        margin-left:-300px;
+        margin-left:-307px;
+        overflow: initial;
+    }
+    
+    input[type=radio]:checked + .btn-custom-control-menu + .invitation-wrapper {
+        display: block;
+        margin-left: -260px;
     }
     
     .btn {
@@ -226,6 +239,14 @@ tr th p, tr td p {
     
     }
     .table-wrapper {
-        margin-right: 25px;
+        margin-top: 0px;
+    }
+    
+    .invitation-card {
+        display: inline-block;
+        width: 260px;
+    }
+    .invitation-card-options {
+        border-spacing: 5px 0px;
     }
 }
