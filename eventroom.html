@@ -62,7 +62,7 @@
             </div>
         </div>
     </header>
-    <section class="container-fluid main-section no-padding">
+    <section class="container-fluid main-section">
         <div class="row menu-spacer">
             <div class="col-xs-12 col-md-12 no-padding">
                 <div class="row">
@@ -308,39 +308,69 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="hidden-xs hidden-sm col-md-1"></div>
+            <div class="col-xs-12 col-sm-12 col-md-10">
                 <div class="dialog-box panel-head">
-                    <div class="panel-body">
+                    <div id="message-panel" class="panel-body">
                         <div class="row">
-                            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                                <div class="message">message1</div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="select-icon">
+                                                    <i id="share-photo" class="fa fa-2x fa-edit d-block"></i>
+                                                    <label class="hidden-xs hidden-sm" for="share-photo">
+                                                        <p>Edit</p>
+                                                    </label>
+                                                </div>
+                                            </th>
+                                            <th class="text-right">
+                                                <div class="select-icon">
+                                                    <i id="share-photo" class="fa fa-2x fa-camera-retro d-block"></i>
+                                                    <label class="hidden-xs hidden-sm" for="share-photo">
+                                                        <p>add Image</p>
+                                                    </label>
+                                                </div>
+                                                <div class="select-icon">
+                                                    <i id="share-video" class="fa fa-2x fa-film d-block"></i>
+                                                    <label class="hidden-xs hidden-sm" for="share-video">
+                                                        <p>add Picture</p>
+                                                    </label>
+                                                </div>
+                                                <div class="select-icon">
+                                                    <i id="share-music" class="fa fa-2x fa-music d-block"></i>
+                                                    <label class="hidden-xs hidden-sm" for="share-music">
+                                                        <p>add image</p>
+                                                    </label>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img class="user-placeholder" src="/assets/images/user_placeholder.png"></img></td>
+                                            <td class="message-box">
+                                                <p>Giacomo Guilizzoni alias "The Beast"</p>
+                                                <p>They shared it via message</p>
+                                                <iframe class="visible-xs shared-content-sm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5336209965644!2d-6.181574784271819!3d53.2978889799689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode+Institute!5e0!3m2!1sen!2sie!4v1551907493623" frameborder="1">
+                                                </iframe>
+                                            </td>
+                                            <td class="hidden-xs message-box-shared-content">
+                                                <iframe class="shared-content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5336209965644!2d-6.181574784271819!3d53.2978889799689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode+Institute!5e0!3m2!1sen!2sie!4v1551907493623" frameborder="1">
+                                                </iframe>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                                 <div class="message">message2</div>
-                                <div class="message">message3</div>
-                            </div>
-                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                <div class="select-icon">
-                                    <label for="">
-                                        <p>add image</p>
-                                    </label>
-                                    <i></i>
-                                </div>
-                                <div class="select-icon">
-                                    <label for="">
-                                        <p>add video</p>
-                                    </label>
-                                    <i></i>
-                                </div>
-                                <div class="select-icon">
-                                    <label for="">
-                                        <p>add music</p>
-                                    </label>
-                                    <i></i>
-                                </div>
+                                <div class="message">message3</div> 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="hidden-xs hidden-sm col-md-1"></div>
         </div>
     </section>
     <footer class="footer container-fluid">

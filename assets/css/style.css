@@ -125,12 +125,13 @@ body, html{
     margin: 0;
     padding: 0;
     height: 100%;
+    max-width: 100%;
 }
 
 header {
-    max-height: 55px;
+    height: 60px;
     width: 100%;
-    padding: 10px 0 4px 0;
+    padding: 5px 0 2px 0;
 }
 
 header .d-inline-block {
@@ -143,13 +144,16 @@ header .d-inline-block {
 
 .logo a > img {
     display: block;
-    width: 120px
+    width: 120px;
+    margin: 10px auto 0px auto;
 }
 
 
 .btn-custom-header-menu {
     display: block;
     position: relative;
+    margin-top: 15px;
+    margin-left: 20px;
     float: left;
     border: 1px solid rgba(0,0,0,0.4);
     border-radius: 4px;
@@ -177,7 +181,7 @@ header .d-inline-block {
 
 .btn-custom-header-menu ~ input:checked + #nav{
     display: block;
-    top: 38px;
+    top: 54px;
     z-index: 2;
     
     transition: all .5s ease-in-out;
@@ -190,7 +194,7 @@ header .d-inline-block {
     font-family: "Playfair Display", sans-serif;
     font-weight: 600;
     font-size: 12px;
-    margin-top: 8px;
+    margin-top: 20px;
 }
 
 /*-------------------------header--footer-elements--*/

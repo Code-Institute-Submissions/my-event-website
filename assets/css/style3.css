@@ -1,5 +1,6 @@
 .main-section {
     min-height: 600px;
+    padding: 40px 0 25px 0;
     background: url(/assets/images/StockSnap_MLZK9UI7Y7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,7 +8,7 @@
 }
 
 .menu-spacer {
-    min-height: 450px;
+    min-height: 400px;
 }
 
 .control-menu-header {
@@ -172,7 +173,7 @@ input[type=radio]:checked + .btn-custom-control-menu + .invitation-wrapper {
 }
 
 tr th p, tr td p {
-    font-size: 12px
+    font-size: 14px
 }
 
 .circle-online {
@@ -187,12 +188,49 @@ tr th p, tr td p {
 
 .dialog-box {
     text-align:center;
+    border: 2px solid rgba(244,244,244, 0.6);
+    border-radius: 10px;
+    margin-top: 15px;
 }
 
-.message {
-    min-height: 150px;
-    min-width: 400px;
+#message-panel {
+   border-radius: 10px;
+   background-color: rgba(244,244,244, 0.7);
 }
+
+.select-icon {
+    display: inline-block;
+}
+
+.user-placeholder {
+    width: 85px;
+}
+
+.message-box {
+    width: 50vw;
+    background-color: rgba(244,244,244,0.8);
+}
+
+.message-box p {
+    font-family: "Roboto", sans-serif;
+    vertical-align: top;
+    text-align: left;
+}
+
+.message-box-shared-content {
+    background-color: rgba(244,244,244,0.8);     
+}
+
+.shared-content,
+.shared-content-sm {
+    height: 100%;
+    width: 100%;
+}
+
+.shared-content-sm {
+    vertical-align: bottom;
+}
+
 /*---------------media-queries--------------*/
 
 @media (min-width: 1200px){
@@ -248,5 +286,12 @@ tr th p, tr td p {
     }
     .invitation-card-options {
         border-spacing: 5px 0px;
+    }
+    
+    .menu-spacer {
+        min-height: 450px;
+    }
+    .user-placeholder {
+        width: 100px;
     }
 }
