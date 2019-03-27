@@ -189,6 +189,7 @@ input[type=radio]:checked + .btn-custom-control-menu + #invitation-wrapper {
     color: red;
 }
 
+
 /*----------------dialog-box-----------------*/
 #all-tables-label {
     z-index: 15;
