@@ -8,7 +8,7 @@
 }
 
 .menu-spacer {
-    min-height: 400px;
+    min-height: 330px;
 }
 
 .control-menu-header {
@@ -51,10 +51,14 @@ input[type=radio]:checked + .btn-custom-control-menu + .side-menu {
     margin-left: -42.5%;
 } 
 
-input[type=radio]:checked + .btn-custom-control-menu + .invitation-wrapper {
+input[type=radio]:checked + .btn-custom-control-menu + #invitation-wrapper {
     display: block;
-    margin-left: -165px;
-}
+    width: 100%;
+    height: 285px;
+    top: 60px;
+    left: 50%;
+    margin-left: -50%;
+} 
 
 .btn-custom-control-menu .vertical-centered-multiple-line {
     line-height: 2;
@@ -114,40 +118,42 @@ input[type=radio]:checked + .btn-custom-control-menu + .invitation-wrapper {
 }
 
 .scroll-helper ul li a p {
-    font-size: 10px;
+    font-size: 12px;
 }
 
-.invitation-wrapper {
-    display: none;
+#invitation-wrapper {
+    display:none;
     position: absolute;
-    top: 60px;
-    left: 50%;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 12px;
+    z-index: 99999;
+    overflow: hidden;
+    height: 313px; 
+    border: none;
+    background-color: transparent;
+    box-shadow: none
+}
+
+.invitation-table {
+    width: 50%;
+    max-width: 350px;
+    margin: 0 auto;
+    min-width: 295px;
 }
 
 .invitation-card {
     display: inline-block;
-    width: 200px;
+    width: 150px;
 }
 
-.invitation-card-options {
-    border: 2px solid #ccc;
-    border-radius: 10px;
+.td-text-alignment-middle {
+    vertical-align: middle !important;
 }
 
-.cell-lg {
-    height: 90px;
-    width: 224px;
-}
-
-.cell-lg span {
-    white-space: nowrap;
-    color: #525252;
-    font-family: "Playfair Display", sans-serif;
-    font-weight: 600;
-    font-size: 10px  
-}
-
-.cell-lg i {
+.label-sm > span {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
     color: #525252;
 }
 
@@ -167,15 +173,6 @@ input[type=radio]:checked + .btn-custom-control-menu + .invitation-wrapper {
     margin-top: 40px;
 } 
 
-.guests-table thead tr th,
-.guests-table tbody tr td{
-    text-align: center;
-}
-
-tr th p, tr td p {
-    font-size: 14px
-}
-
 .circle-online {
     color: green;
 }
@@ -185,12 +182,57 @@ tr th p, tr td p {
 }
 
 /*----------------dialog-box-----------------*/
+#all-tables-label {
+    z-index: 15;
+}
 
+#your-table-label {
+    z-index: 12;
+}
+
+input[type=radio]:checked + .dialog-box-menu + .dialog-box {
+   display: block; 
+}
+
+#all-tables:checked + #all-tables-label {
+   z-index: -1 
+}
+
+.menu-spacer-dialog-box {
+    height: 500px;
+}
+
+.dialog-box-menu {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    margin-left: -9%;
+    background-color: rgb(211,211,211);
+    color: #525252;
+    border: 1.5px solid gold;
+    width: 130px;
+    height: 45px;
+}
+
+.dialog-box-menu .vertical-centered-multiple-line {
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 12px;
+}
+    
 .dialog-box {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left:-50%;
+    height:calc(100% - 50px);
+    overflow-y: scroll;
     text-align:center;
     border: 2px solid rgba(244,244,244, 0.6);
     border-radius: 10px;
     margin-top: 15px;
+    z-index: 10;
 }
 
 #message-panel {
@@ -200,10 +242,20 @@ tr th p, tr td p {
 
 .select-icon {
     display: inline-block;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 
 .user-placeholder {
+    width: 105px;
+}
+
+.user-placeholder img {
     width: 85px;
+}
+
+.user-label {
+    color: rgba(34,139,34, 0.6);
 }
 
 .message-box {
@@ -218,7 +270,9 @@ tr th p, tr td p {
 }
 
 .message-box-shared-content {
-    background-color: rgba(244,244,244,0.8);     
+    background-color: rgba(244,244,244,0.8);
+    min-height: 100px;
+    min-width: 283px;
 }
 
 .shared-content,
@@ -229,26 +283,33 @@ tr th p, tr td p {
 
 .shared-content-sm {
     vertical-align: bottom;
+    height: 20vh;
 }
 
 /*---------------media-queries--------------*/
-
-@media (min-width: 1200px){
+@media (min-width: 991px){
+    
+    input[type=radio]:checked + .btn-custom-control-menu + #invitation-wrapper {
+        display: block;
+        width: 60%;
+        height: 285px;
+        top: 60px;
+        left: 50%;
+        margin-left: -30%;
+    }
     
     input[type=radio]:checked + .btn-custom-control-menu + .side-menu {
         display: block;
-        width: 614px;
+        width: 60%;
         height: 250px;
         top: 60px;
         left: 50%;
-        margin-left:-307px;
+        margin-left:-30%;
         overflow: initial;
     }
-    
-    input[type=radio]:checked + .btn-custom-control-menu + .invitation-wrapper {
-        display: block;
-        margin-left: -260px;
-    }
+
+}
+@media (min-width: 1200px){
     
     .btn {
             padding: 6px 12px; 
@@ -281,17 +342,23 @@ tr th p, tr td p {
     }
     
     .invitation-card {
-        display: inline-block;
-        width: 260px;
+        width: 185px
     }
+    
     .invitation-card-options {
         border-spacing: 5px 0px;
     }
     
     .menu-spacer {
-        min-height: 450px;
+        min-height: 375px;
     }
-    .user-placeholder {
+    
+    .user-placeholder img{
         width: 100px;
+    }
+    
+    .dialog-box-menu p {
+        
+        font-size: 14px;
     }
 }

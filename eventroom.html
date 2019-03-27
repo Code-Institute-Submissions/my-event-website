@@ -34,7 +34,7 @@
                         <li id="login" class="uppercase">
                             <div class="head-element text-center">
                                 <a href="#">
-                                    <span>Log In</span>
+                                    <span>Options</span>
                                 </a>
                             </div>
                         </li>
@@ -186,7 +186,7 @@
                                     <div class="side-menu guests" aria-labelledby="guests-menu">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <table class="table table-hover table-responsive guests-table">
+                                                <table align="center" class="table table-hover table-responsive guests-table">
                                                     <thead class="">
                                                         <tr>
                                                             <th>
@@ -238,34 +238,40 @@
                                     <label class="btn btn-custom-control-menu uppercase" for="card-menu" aria-haspopup="true" aria-expanded="true">
                                        <p class="vertical-centered-multiple-line">Invitation card</p> 
                                     </label>
-                                    <div class="invitation-wrapper">
-                                        <div class="invitation-card-options d-table bg-color-gold text-center">
-                                            <div class="table-row">
-                                                <div class="d-table-cell">
-                                                    <img class="invitation-card" src="/assets/images/wedding-invitation.jpg"></img>
-                                                </div>
-                                            </div>
-                                            <div class="d-table-cell">    
-                                                    <div class="table-row links-row">
-                                                        <div class="d-table-cell cell-lg text-center">
-                                                            <div id="print" class="print-invitation" aria-labelledby="print-invitation"><i class="fa fa-3x fa-print"></i></div>
-                                                            <label for="print"><span>Print invitation card</span></label>
+                                    <div id="invitation-wrapper" class="side-menu">
+                                        <table class="table invitation-table">
+                                            <tbody align="center" class="bg-color-gold">
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img class="invitation-card" src="/assets/images/wedding-invitation.jpg"></img>
+                                                    </td>
+                                                    <td class="td-text-alignment-middle"> 
+                                                        <div id="print" class="print-invitation" aria-labelledby="print-invitation">
+                                                            <a href="#"><i class="fa fa-2x fa-print"></i></a>
                                                         </div>
-                                                    </div>
-                                                    <div class="table-row links-row">
-                                                        <div class="d-table-cell cell-lg text-center">
-                                                            <div id="share-inv" class="share-invitation" aria-labelledby="share-invitation"><i class="fa fa-3x fa-share-alt"></i></div>
-                                                            <label for="share-inv"><span>Share invitation card</span></label>
+                                                        <label class="label-sm" for="print"><span>Print invitation card</span></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td-text-alignment-middle">    
+                                                        <div id="share-inv" class="share-invitation" aria-labelledby="share-invitation">
+                                                            <a href="#"><i class="fa fa-2x fa-share-alt"></i></a>
                                                         </div>
-                                                    </div>
-                                                    <div class="table-row links-row">
-                                                        <div class="d-table-cell cell-lg text-center">
-                                                            <div id="download-inv" class="download-invitation" aria-labelledby="download-invitation"><a href="/assets/images/invitation-card.pdf" target="_blank"><i class="fa fa-3x fa-download"></i></a></div>
-                                                            <label for="download-inv"><span>Download invitation card</span></label>
+                                                        <label class="label-sm" for="share-inv"><span>Share invitation card</span></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td-text-alignment-middle">
+                                                        <div id="download-inv" class="download-invitation" aria-labelledby="download-invitation">
+                                                            <a href="/assets/images/invitation-card.pdf" target="_blank">
+                                                                <i class="fa fa-2x fa-download"></i>
+                                                            </a>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                        </div>
+                                                        <label class="label-sm" for="download-inv"><span>Download invitation card</span></label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                     
                                     <input class="d-none" type="radio" name="radio-menu" id="contents-menu"/>
@@ -308,69 +314,188 @@
             </div>
         </div>
         <div class="row">
-            <div class="hidden-xs hidden-sm col-md-1"></div>
-            <div class="col-xs-12 col-sm-12 col-md-10">
-                <div class="dialog-box panel-head">
-                    <div id="message-panel" class="panel-body">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                <div class="select-icon">
-                                                    <i id="share-photo" class="fa fa-2x fa-edit d-block"></i>
-                                                    <label class="hidden-xs hidden-sm" for="share-photo">
-                                                        <p>Edit</p>
-                                                    </label>
-                                                </div>
-                                            </th>
-                                            <th class="text-right">
-                                                <div class="select-icon">
-                                                    <i id="share-photo" class="fa fa-2x fa-camera-retro d-block"></i>
-                                                    <label class="hidden-xs hidden-sm" for="share-photo">
-                                                        <p>add Image</p>
-                                                    </label>
-                                                </div>
-                                                <div class="select-icon">
-                                                    <i id="share-video" class="fa fa-2x fa-film d-block"></i>
-                                                    <label class="hidden-xs hidden-sm" for="share-video">
-                                                        <p>add Picture</p>
-                                                    </label>
-                                                </div>
-                                                <div class="select-icon">
-                                                    <i id="share-music" class="fa fa-2x fa-music d-block"></i>
-                                                    <label class="hidden-xs hidden-sm" for="share-music">
-                                                        <p>add image</p>
-                                                    </label>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><img class="user-placeholder" src="/assets/images/user_placeholder.png"></img></td>
-                                            <td class="message-box">
-                                                <p>Giacomo Guilizzoni alias "The Beast"</p>
-                                                <p>They shared it via message</p>
-                                                <iframe class="visible-xs shared-content-sm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5336209965644!2d-6.181574784271819!3d53.2978889799689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode+Institute!5e0!3m2!1sen!2sie!4v1551907493623" frameborder="1">
-                                                </iframe>
-                                            </td>
-                                            <td class="hidden-xs message-box-shared-content">
-                                                <iframe class="shared-content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5336209965644!2d-6.181574784271819!3d53.2978889799689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode+Institute!5e0!3m2!1sen!2sie!4v1551907493623" frameborder="1">
-                                                </iframe>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="message">message2</div>
-                                <div class="message">message3</div> 
+            <div class="hidden-xs col-sm-2 col-md-2"></div>
+            <div class="col-xs-12 col-sm-8 col-md-8">
+                <div class="menu-spacer-dialog-box relative">
+                    <input class="d-none" type="radio" name="radio-menu-dialog-box" id="your-table" checked/>
+                    <label id="your-table-label" class="btn dialog-box-menu uppercase" for="your-table" aria-haspopup="true" aria-expanded="true">
+                        <p class="vertical-centered-multiple-line">Go To Your Table</p> 
+                    </label>
+                    <div id="your-table-dialog-box" class="dialog-box panel-head">
+                        <div id="message-panel" class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="select-icon">
+                                                        <label class="hidden-xs hidden-sm" for="edit-msg">
+                                                            <p>Edit</p>
+                                                        </label>
+                                                        <a href="#edit-msg"><i id="edit-msg" class="fa fa-2x fa-edit d-block"></i></a>
+                                                    </div>
+                                                </th>
+                                                <th class="hidden-xs hidden-sm"></th>
+                                                <th class="text-right">
+                                                    <div class="select-icon text-center">
+                                                        <a href="#share-photo"><i id="share-photo" class="fa fa-2x fa-camera-retro d-block"></i></a>
+                                                    </div>
+                                                    <div class="select-icon text-center">
+                                                        <label class="hidden-xs hidden-sm" for="share-video">
+                                                            <p>Share</p>
+                                                        </label>
+                                                        <a href="#share-video"><i id="share-video" class="fa fa-2x fa-film d-block"></i></a>
+                                                    </div>
+                                                    <div class="select-icon text-center">
+                                                        <a href="#share-music"><i id="share-music" class="fa fa-2x fa-music d-block"></i></a>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="user-placeholder"><img src="/assets/images/user_placeholder.png"></img></td>
+                                                <td class="message-box">
+                                                    <p class="user-label">Giacomo Guilizzoni alias "The Beast":</p>
+                                                    <p>They shared it via message</p>
+                                                    <iframe class="visible-xs visible-sm shared-content-sm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5336209965644!2d-6.181574784271819!3d53.2978889799689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode+Institute!5e0!3m2!1sen!2sie!4v1551907493623" frameborder="1">
+                                                    </iframe>
+                                                </td>
+                                                <td class="hidden-xs hidden-sm message-box-shared-content">
+                                                    <iframe class="shared-content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5336209965644!2d-6.181574784271819!3d53.2978889799689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode+Institute!5e0!3m2!1sen!2sie!4v1551907493623" frameborder="1">
+                                                    </iframe>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="user-placeholder"><img src="/assets/images/user_placeholder.png"></img></td>
+                                                <td class="message-box">
+                                                    <p class="user-label">PierPaolo Pianni:</p>
+                                                    <p>I bet someone has the map.<br/>
+                                                    Check with other tables.<br/>
+                                                    Maybe they know</p>
+                                                    
+                                                </td>
+                                                <td class="hidden-xs hidden-sm message-box-shared-content">
+                                                    
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="user-placeholder"><img src="/assets/images/user_placeholder.png"></img></td>
+                                                <td class="message-box">
+                                                    <p class="user-label">Giacomo Guilizzoni alias "The Beast":</p>
+                                                    <p>Hey Pier! Any idea where the party is?</p>
+                                                </td>
+                                                <td class="hidden-xs hidden-sm message-box-shared-content">
+                                                    
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="d-none" type="radio" name="radio-menu-dialog-box" id="all-tables"/>
+                    <label id="all-tables-label" class="btn dialog-box-menu uppercase" for="all-tables" aria-haspopup="true" aria-expanded="true">
+                        <p class="vertical-centered-multiple-line">Go To All Tables</p> 
+                    </label>
+                    <div id="all-tables-dialog-box" class="dialog-box panel-head">
+                        <div id="message-panel" class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="select-icon">
+                                                        <label class="hidden-xs hidden-sm" for="edit-msg">
+                                                            <p>Edit</p>
+                                                        </label>
+                                                        <a href="#edit-msg"><i id="edit-msg" class="fa fa-2x fa-edit d-block"></i></a>
+                                                    </div>
+                                                </th>
+                                                <th class="hidden-xs hidden-sm"></th>
+                                                <th class="text-right">
+                                                    <div class="select-icon text-center">
+                                                        <a href="#share-photo"><i id="share-photo" class="fa fa-2x fa-camera-retro d-block"></i></a>
+                                                    </div>
+                                                    <div class="select-icon text-center">
+                                                        <label class="hidden-xs hidden-sm" for="share-video">
+                                                            <p>Share</p>
+                                                        </label>
+                                                        <a href="#share-video"><i id="share-video" class="fa fa-2x fa-film d-block"></i></a>
+                                                    </div>
+                                                    <div class="select-icon text-center">
+                                                        <a href="#share-music"><i id="share-music" class="fa fa-2x fa-music d-block"></i></a>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="user-placeholder"><img src="/assets/images/user_placeholder.png"></img></td>
+                                                <td class="message-box">
+                                                    <p class="user-label">-The Great Lebowsky-<br/>Giacomo Guilizzoni alias "The Beast":</p>
+                                                    <p>Not sure at what time is the party...</p>
+                                                   
+                                                </td>
+                                                <td class="hidden-xs hidden-sm message-box-shared-content">
+                                                    
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="user-placeholder"><img src="/assets/images/user_placeholder.png"></img></td>
+                                                <td class="message-box">
+                                                    <p class="user-label">-Amarcord-<br/>Marco Botton "TuttoFare":</p>
+                                                    <p>There is a map on this website, check it out -></p>
+                                                    <iframe class="visible-xs visible-sm shared-content-sm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5336209965644!2d-6.181574784271819!3d53.2978889799689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode+Institute!5e0!3m2!1sen!2sie!4v1551907493623" frameborder="1">
+                                                    </iframe>
+                                                </td>
+                                                <td class="hidden-xs hidden-sm message-box-shared-content">
+                                                    <iframe class="shared-content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5336209965644!2d-6.181574784271819!3d53.2978889799689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode+Institute!5e0!3m2!1sen!2sie!4v1551907493623" frameborder="1">
+                                                    </iframe>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="user-placeholder"><img src="/assets/images/user_placeholder.png"></img></td>
+                                                <td class="message-box">
+                                                    <p class="user-label">-Frankeinstein Junior-<br/>
+                                                    Mariah Maclachlan alias "Better Half":</p>
+                                                    <p>Watch out! uncle Tom is already drunk ahahah!</p>
+                                                    <iframe class="visible-xs visible-sm shared-content-sm" src="/assets/images/uncle-tom.jpg" frameborder="1">
+                                                    </iframe>
+                                                </td>
+                                                <td class="hidden-xs hidden-sm message-box-shared-content">
+                                                    <iframe class="shared-content" src="/assets/images/uncle-tom.jpg" frameborder="1">
+                                                    </iframe>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="hidden-xs hidden-sm col-md-1"></div>
+            <div class="hidden-xs col-sm-2 col-md-2"></div>
         </div>
     </section>
     <footer class="footer container-fluid">

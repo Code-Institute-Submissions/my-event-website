@@ -70,8 +70,26 @@
 
 /*----------------------------General--*/
 
-.fa {
-    margin-right: 5px;
+a,
+a:hover,
+a:active{
+    text-decoration: none;
+    color: #525252;
+    border-color: none;
+}
+
+a:hover {
+    color: black;
+}
+
+button:focus {
+    outline: none;
+}
+
+tr th p, 
+tr td p {
+    text-align: center;
+    font-size: 14px
 }
 
 .no-padding {
@@ -157,6 +175,10 @@ header .d-inline-block {
     float: left;
     border: 1px solid rgba(0,0,0,0.4);
     border-radius: 4px;
+}
+
+.btn-custom-header-menu .fa {
+    margin-right: 5px;
 }
 
 #nav {
