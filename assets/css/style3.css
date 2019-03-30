@@ -1,6 +1,6 @@
 .main-section {
     min-height: 600px;
-    padding: 40px 0 25px 0;
+    padding: 60px 0 25px 0;
     background: url(/assets/images/StockSnap_MLZK9UI7Y7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -189,6 +189,16 @@ input[type=radio]:checked + .btn-custom-control-menu + #invitation-wrapper {
     color: red;
 }
 
+.gallery-item {
+    height: 200px;
+    vertical-align: middle !important;
+}
+
+.custom-fa-responsive-x {
+    margin-left: 20px !important;
+    font-size: 8em;    
+}
+
 
 /*----------------dialog-box-----------------*/
 #all-tables-label {
@@ -209,6 +219,9 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
 
 .menu-spacer-dialog-box {
     height: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dialog-box-menu {
@@ -296,10 +309,22 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
 }
 
 /*---------------media-queries--------------*/
+@media (min-width:440px) and (max-width:770px) {
+       .menu-spacer-dialog-box {
+        width: 80%;
+    } 
+}
+
 @media (min-width:776px){
+    
+    .menu-spacer-dialog-box {
+        width: 100%;
+    }
+
     .dialog-box {  
       margin-left: -50%; 
     }
+    
 }
 
 @media (min-width: 991px){
@@ -349,7 +374,7 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
     }
     
     .menu-spacer {
-        min-height: 375px;
+        min-height: 400px;
     }
     
     .user-placeholder img{
@@ -366,4 +391,5 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
         font-size: 14px;
         line-height: 45px;
     }
+    
 }
