@@ -1,6 +1,6 @@
 .main-section {
     min-height: 600px;
-    padding: 60px 0 25px 0;
+    padding: 70px 0 25px 0;
     background: url(../images/StockSnap_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,11 +25,7 @@
 
 }
 
-.btn {
-    padding: 0;
-}
-
-.btn-custom-control-menu {
+.radio-menu {
     background-color: rgba(211,211,211);
     color: #525252;
     border: 1.5px solid gold;
