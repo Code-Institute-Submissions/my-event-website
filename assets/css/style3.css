@@ -1,7 +1,7 @@
 .main-section {
     min-height: 600px;
     padding: 60px 0 25px 0;
-    background: url(../images/StockSnap_MLZK9UI7Y7.jpg);
+    background: url(../images/StockSnap_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -133,6 +133,11 @@ input[type=radio]:checked + .btn-custom-control-menu + #invitation-wrapper {
     border: none;
     background-color: transparent;
     box-shadow: none
+}
+
+#invitation-wrapper> table> tbody> tr> td {
+    
+    border: none;
 }
 
 .invitation-table {
@@ -277,7 +282,7 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
 }
 
 .user-label {
-    color: rgba(34,139,34, 0.6);
+    color: #006400;
 }
 
 .message-box {
