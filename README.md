@@ -2,8 +2,15 @@
 
 ### at the end of the course I would like to expand this website
 ### so to create a community of people that will partecipate to my wedding!!
+----------
 
 1st assignment - Tech used: Html5, Css3, Bootstrap 3.3.7
+
+features: 
+all buttons are working without javascript (checkbox/radio hack)
+"Submit" action redirect to eventroom page, this won't be possible from github because of restrictions
+
+---------
 
 Please note: this is a simpler version of my idea as to have all contents now 
 
