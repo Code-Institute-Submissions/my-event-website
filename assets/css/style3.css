@@ -1,5 +1,6 @@
 .main-section {
-    min-height: 600px;
+    height: calc(100% + 40vh);
+    min-height: 720px;
     padding: 70px 0 25px 0;
     background: url(../images/StockSnap_2.jpg);
     background-repeat: no-repeat;
@@ -42,7 +43,7 @@ input[type=radio]:checked + .btn-custom-control-menu + .side-menu {
     display: block;
     width: 85%;
     height: 285px;
-    top: 60px;
+    top: 90px;
     left: 50%;
     margin-left: -42.5%;
 } 
@@ -51,7 +52,7 @@ input[type=radio]:checked + .btn-custom-control-menu + #invitation-wrapper {
     display: block;
     width: 100%;
     height: 285px;
-    top: 60px;
+    top: 90px;
     left: 50%;
     margin-left: -50%;
 } 
@@ -224,7 +225,7 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
 }
 
 .menu-spacer-dialog-box {
-    height: 500px;
+    min-height: 300px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -232,7 +233,7 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
 
 .dialog-box-menu {
     position: absolute;
-    top: 15px;
+    top: 5%;
     left: 50%;
     margin-left: -65px;
     background-color: rgb(211,211,211);
@@ -255,13 +256,15 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
 .dialog-box {
     display: none;
     position: absolute;
-    top: 55px;
+    width: 100%;
+    margin-left: -50%;
+    top: 20%;
     left: 50%;
-    margin-left:-48%;
-    height:calc(100% - 50px);
+    height: 60vh;
     overflow-y: scroll;
     text-align:center;
-    border: 2px solid rgba(244,244,244, 0.7);
+    border: 2px solid rgba(244,244,244, 1);
+    background-color: rgba(244,244,244, 0.7);
     border-radius: 10px;
     margin-top: 15px;
     z-index: 10;
@@ -323,31 +326,36 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
 }
 
 /*---------------media-queries--------------*/
+@media (max-width:359px) {
+    
+    label.btn-custom-control-menu {
+        font-size: 9px;
+    }
+    
+    .radio-menu {
+        width: 54px;
+    }
+}
 @media (min-width:440px) and (max-width:770px) {
-       .menu-spacer-dialog-box {
-        width: 80%;
-    } 
+
 }
 
-@media (min-width:776px){
+@media (min-width:767px){
     
-    .menu-spacer-dialog-box {
-        width: 100%;
-    }
-
-    .dialog-box {  
-      margin-left: -50%; 
+    .main-section {
+        height: 100%;
     }
     
 }
 
 @media (min-width: 991px){
-    
 
 
 }
+
 @media (min-width: 1200px){
     
+
     .btn {
             padding: 6px 12px; 
     }
