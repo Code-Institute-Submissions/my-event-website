@@ -11,8 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wedd'Up - For Your Wedding Party!</title>
-    <link rel='shortcut icon' href='./assets/images/LogoImg.ico' type='image/x-icon'>
-    <link rel='icon' href='./assets/images/LogoImg.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='./assets/images/LogoImg.ico' type='image/x-icon'/>
+    <link rel='icon' href='./assets/images/LogoImg.ico' type='image/x-icon'/>
 </head>
 <body>
     <header class="header container-fluid bg-color-header">
@@ -41,11 +41,11 @@
                             <div class="head-element text-center relative support-link">
                                 <a class="" href="#">
                                     <span>Support</span>
-                                    <div class="support-contacts text-center">
-                                        <p>Need Help? Call Us:</p>
-                                        <a href="tel:555-555-555">555-555-555</a>
-                                    </div>
                                 </a>
+                                <div class="support-contacts text-center">
+                                    <p>Need Help? Call Us:</p>
+                                    <a href="tel:555-555-555">555-555-555</a>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -53,7 +53,7 @@
             </div>
             <div class="col-xs-4 col-md-4 col-md-pull-4 logo no-padding">
                 <a href="index.html">
-                    <img src="./assets/images/WeddUpLogo.png"></img>
+                    <img src="./assets/images/WeddUpLogo.png" alt="WeddUp logo"/>
                 </a>
             </div>
             <div class="col-xs-4 col-md-4 no-padding">
@@ -102,7 +102,7 @@
                                 <div class="custom-underline"></div>
                             </div>
                     </div>
-                    <!---------Sign in-------->
+                    <!--Sign in-->
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
                             <div class="row">
@@ -114,11 +114,11 @@
                                                 <span class="d-block">With Google</span>
                                             </a>
                                         </div>
-                                        <a class="signup" href="sign_up.html">
-                                            <button class="btn-rounded-shiny center-block">
-                                                Sign Up
-                                            </button>
-                                        </a>
+                                        <div class="btn-rounded-shiny center-block">
+                                            <a class="signup" href="sign_up.html">
+                                               <p>Sign Up</p> 
+                                            </a>
+                                        </div>
                                         <div class="custom-wrap-border">
                                             <a id="facebook-signup" class="d-block text-center" href="#">
                                                 <i class="fa fa-facebook"></i>
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                     </div> 
-                    <!--------Sign in-end-------->
+                    <!--Sign in-end-->
                     <div class="row">
                         <div class="col-xs-12 col-md-12 spacer">
                             <ul class="list-unstyled">
@@ -163,12 +163,11 @@
                 <div class="col-xs-12 col-md-4">
                     <p class="uppercase text-center">Your Videos</p>
                     <div class="center-block spacer embedded-wrapper">
-                        <video class="embedded-content-big" type="video/mp4" controls >
+                        <video class="embedded-content-big" controls >
                             <source src="./assets/videos/TheMonkees.mp4#t=0.9">
-                           <track src="./assets/videos/example_video.vtt"
+                            <track src="./assets/videos/example_video.vtt"
                                   label="example"
                                   kind="captions"
-                                  scrleng="en"/
                                   default>
                             Your browser currently does not support this video feature. 
                         </video>
@@ -177,13 +176,13 @@
                 <div class="col-xs-12 col-md-4">
                     <p class="uppercase text-center">Party Locations</p>
                     <div class="center-block spacer embedded-wrapper">
-                        <iframe class="embedded-content-big" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5336209965644!2d-6.181574784271819!3d53.2978889799689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode+Institute!5e0!3m2!1sen!2sie!4v1551907493623" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe class="embedded-content-big" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5336209965644!2d-6.181574784271819!3d53.2978889799689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode+Institute!5e0!3m2!1sen!2sie!4v1551907493623" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-4">
                     <p class="uppercase text-center">Your Pictures</p>
                     <div class="center-block spacer embedded-wrapper">
-                        <img class="embedded-content-big" src="https://raw.githubusercontent.com/Code-Institute-Org/project-assets/master/stream-1/band-assets/images/monkees.jpg"></img>
+                        <img class="embedded-content-big" src="https://raw.githubusercontent.com/Code-Institute-Org/project-assets/master/stream-1/band-assets/images/monkees.jpg" alt="example image"/>
                     </div>
                 </div>
             </div>
@@ -245,13 +244,13 @@
         </div>
     </section>
     <footer class="footer container-fluid">
-        <!----------footer-nav---------->
+        <!--footer-nav-->
         <div class="row">
             <nav id="footer-nav">
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="footer-lg text-alignment">
                         <label class="footer-element custom-footer-nojs-btn footer-element-title bg-color-inverse" for="btnControl-footer-company">
-                            <span class="uppercase"><strong>Company</strong>
+                            <span class="uppercase"><strong>Company</strong></span>
                         </label>
                         <input class="d-none" type="checkbox" id="btnControl-footer-company"/>
                         <ul class="list-unstyled">
@@ -381,7 +380,7 @@
                 </div>
             </nav>
         </div>
-        <!---------end-footer-nav---------->
+        <!--end-footer-nav-->
         <div class="row spacer">
             <div class="col-xs-12 col-md-3">
                 <div class="footer-element language-select text-alignment footer-lg">

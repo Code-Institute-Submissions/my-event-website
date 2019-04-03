@@ -72,10 +72,15 @@
 
 a,
 a:hover,
-a:active{
+a:active,
+a:focus{
     text-decoration: none;
     color: #525252;
-    border-color: none;
+    border-color: transparent;
+}
+
+input:focus {
+    outline: none;
 }
 
 a:hover {
@@ -304,16 +309,21 @@ header .d-inline-block {
     border-top-right-radius: 3px;
 }
 
+input.btn-rounded-shiny {
+    line-height: 64px;
+}
+
 .btn-rounded-shiny {
     display: inline-block;
     height: 70px;
     width: 70px;
+    line-height: 67px;
+    background-color: rgba(211,211,211,0.7);
     color:#525252;
     margin-bottom: 0;
     font-family: "Playfair Display", sans-serif;  
     font-size: 16px;
     font-weight: 600;
-    line-height: 1.42857143;
     text-align: center;
     white-space: nowrap;
     -ms-touch-action: manipulation;
@@ -323,14 +333,20 @@ header .d-inline-block {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-image: none;
     border: 1.5px solid gold;
     border-radius: 50%;
 }
 
 .signup {
+    display: inline-block;
     text-decoration: none;
-    color: #525252 ;
+    color: #525252;
+    height: 100%;
+}
+
+.signup p {
+    display: inline-block;
+    margin: 0;
 }
 
 .signup:hover {
@@ -633,10 +649,10 @@ option{
     }
     
     .footer-element-title {
-        border: none;
+        border: 0;
         box-sizing: content-box;
         text-align: left;
-        border-radius: none;
+        border-radius: 0;
         background-color: inherit;
         color: inherit; 
     }

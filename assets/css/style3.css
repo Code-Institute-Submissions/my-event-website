@@ -56,16 +56,16 @@ input[type=radio]:checked + .btn-custom-control-menu + #invitation-wrapper {
     margin-left: -50%;
 } 
 
-.btn-custom-control-menu .vertical-centered-multiple-line {
-    line-height: 2.5;
-    vertical-align: middle;
-}
-
-.btn-custom-control-menu p {
+label.btn-custom-control-menu {
     white-space: normal;
+    font-family: "Playfair Display", sans-serif;
     font-size: 10px;
     margin: 0;
     line-height: 45px;
+}
+
+label.vertical-centered-multiple-line {
+    line-height: 2;
 }
 
 .side-menu {
@@ -152,10 +152,12 @@ input[type=radio]:checked + .btn-custom-control-menu + #invitation-wrapper {
     vertical-align: middle !important;
 }
 
-.label-sm > span {
+.label-sm {
+    text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 10px;
     color: #525252;
+    font-weight: 900;
 }
 
 .content-wrapper {
@@ -235,15 +237,19 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
     margin-left: -65px;
     background-color: rgb(211,211,211);
     color: #525252;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 12px;
     border: 1.5px solid gold;
     width: 130px;
     height: 45px;
+    line-height: 45px;
+    
 }
 
-.dialog-box-menu .vertical-centered-multiple-line {
-    line-height: 40px;
+.vertical-centered-multiple-line {
+    line-height: 30px;
     vertical-align: middle;
-    font-size: 12px;
+    font-size: 12px 
 }
     
 .dialog-box {
@@ -255,7 +261,7 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
     height:calc(100% - 50px);
     overflow-y: scroll;
     text-align:center;
-    border: 2px solid rgba(244,244,244, 0.6);
+    border: 2px solid rgba(244,244,244, 0.7);
     border-radius: 10px;
     margin-top: 15px;
     z-index: 10;
@@ -263,13 +269,17 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
 
 #message-panel {
    border-radius: 10px;
-   background-color: rgba(244,244,244, 0.7);
+
 }
 
 .select-icon {
     display: inline-block;
     margin-right: 2px;
     margin-left: 2px;
+}
+
+.select-icon > span {
+    font-family: "Playfair Display", sans-serif; 
 }
 
 .user-placeholder {
@@ -360,6 +370,14 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
         font-size: 14px
     }
     
+    label.vertical-centered-multiple-line {
+        line-height: 1.7;
+    }
+    
+    label.btn-custom-control-menu {
+        font-size: 14px;
+    }
+    
     .content-wrapper {
         margin-top: 20px;
     
@@ -408,13 +426,8 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
     
     .dialog-box-menu {
         width: 135px;
-        padding: 0;
-    }
-    
-    .dialog-box-menu .vertical-centered-multiple-line {
-        
         font-size: 14px;
-        line-height: 45px;
+        padding: 0;
     }
     
 }
