@@ -1,3 +1,9 @@
+input.btn-rounded-shiny {
+    line-height: 60px;
+    padding: 0 5px 0 5px;
+    min-width: 0;
+}
+
 .centered {
     margin-left: auto;
     margin-right: auto;
