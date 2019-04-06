@@ -84,6 +84,7 @@ I solely used Html5, Css3, Bootstrap 3.3.7:
     *URI : TextArea  
     257		Unknown pseudo-element or pseudo-class :focus-within*  
     :focus-within can be found [here](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within)
++ tested on cellphone and Edge as well
 
 On a functionality level the only test has been:
  1. Sign up form:  
