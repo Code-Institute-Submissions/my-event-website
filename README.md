@@ -26,8 +26,8 @@ In this first version, as a Guest I want to login into the Eventroom to get my i
   created by the Groom and Bride specifically for this date.  
 
 My mockup should be visible here:  
-*[Go to my mockup](https://balsamiq.cloud/svddr58/plz55db/r2278?f=N4IgUiBcCMA0IDkpxAYWfAMhkAhHAsjgFo4DSUA2gLoC%2BQA%3D "MyMockup")*  
-I used Balsamiq free trial hence there is a chance it won't be accessible
+*[Go to my mockup](https://github.com/SalvatoreFiengo/my-event-website/tree/master/mockup "mockup folder in repository")*    
+mockup has been added to github in his own folder.
 
 ## Features
 
