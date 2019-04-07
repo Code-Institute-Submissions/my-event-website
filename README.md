@@ -92,6 +92,20 @@ On a functionality level the only test has been:
         2. fill the form   
         3. submit and check if validation will return error if no email is present.
 
+## Deployment
+
+Deployed on github, 
++ one git branch: master  
++ from Settings in GitHub:  
+    1. scrolled down to GitHub Pages
+    2. selected source: master branch
+    3. site published on [https://salvatorefiengo.github.io/my-event-website/](https://salvatorefiengo.github.io/my-event-website/)
+
+
+Locally any IDE capable of loading HTML and CSS could load the project.   
+Without JS it could be done even without IDE copy pasting HTML or CSS file in .txt files   
+and renaming their file extensions accordingly   
+  
 ### Media
 
 The photos used for this website are all copyright free (even for commercial use):  
