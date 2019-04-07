@@ -1,3 +1,5 @@
+/*---------------------------------Section--*/
+
 .main-section {
     height: calc(100% + 40vh);
     min-height: 720px;
@@ -336,19 +338,7 @@ input[type=radio]:checked + .dialog-box-menu + .dialog-box {
         width: 54px;
     }
 }
-@media (min-width:440px) and (max-width:770px) {
 
-}
-
-@media (min-width:767px){
-
-    
-}
-
-@media (min-width: 991px){
-
-
-}
 
 @media (min-width: 1200px){
     

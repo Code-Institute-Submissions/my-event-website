@@ -20,7 +20,7 @@
             <div class="col-xs-4 col-md-4 col-md-push-4 text-center no-padding">
                 <label class="btn btn-custom-header-menu" for="btnControl"><i class="fa fa-bars"></i></label>
                 <input class="d-none" type="checkbox" id="btnControl"/>
-                
+                <!--responsive nav will close up in a menu botton-->
                 <nav id="nav">
                     <ul>
                         <li id="home" class="uppercase">
@@ -102,7 +102,6 @@
                                 <div class="custom-underline"></div>
                             </div>
                     </div>
-                    <!--Sign in-->
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
                             <div class="row">
@@ -130,7 +129,6 @@
                             </div>
                         </div>
                     </div> 
-                    <!--Sign in-end-->
                     <div class="row">
                         <div class="col-xs-12 col-md-12 spacer">
                             <ul class="list-unstyled">
@@ -244,7 +242,7 @@
         </div>
     </section>
     <footer class="footer container-fluid">
-        <!--footer-nav-->
+        <!--footer changing in smaller viewport to list of clickable lables-checkbox hack to reproduce button behaviour without js--> 
         <div class="row">
             <nav id="footer-nav">
                 <div class="col-xs-12 col-sm-6 col-md-3">
@@ -252,6 +250,7 @@
                         <label class="footer-element custom-footer-nojs-btn footer-element-title bg-color-inverse" for="btnControl-footer-company">
                             <span class="uppercase"><strong>Company</strong></span>
                         </label>
+                        <!--checkbox hack to to reproduce buttons behaviour without js-->
                         <input class="d-none" type="checkbox" id="btnControl-footer-company"/>
                         <ul class="list-unstyled">
                             <li class="uppercase footer-title-position ">

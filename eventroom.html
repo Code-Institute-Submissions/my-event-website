@@ -21,7 +21,7 @@
             <div class="col-xs-4 col-md-4 col-md-push-4 text-center no-padding">
                 <label class="btn btn-custom-header-menu" for="btnControl"><i class="fa fa-bars"></i></label>
                 <input class="d-none" type="checkbox" id="btnControl"/>
-                
+                <!--responsive nav will close up in a menu botton-->
                 <nav id="nav">
                     <ul>
                         <li id="home" class="uppercase">
@@ -74,6 +74,7 @@
                         <div class="control-menu">
                             <div class="">
                                 <div class="relative">
+                                    <!--radio-hack to reproduce buttons behaviour without js-->
                                     <input class="d-none" type="radio" name="radio-menu" id="profile-menu"/>
                                     <label class="btn btn-custom-control-menu radio-menu no-padding uppercase" for="profile-menu" aria-haspopup="true">
                                       Profile 
@@ -182,7 +183,6 @@
                                             </div>
                                       </div>
                                     </div>
-                                    
                                     <input class="d-none" type="radio" name="radio-menu" id="guests-menu"/>
                                     <label class="btn btn-custom-control-menu radio-menu no-padding uppercase" for="guests-menu" aria-haspopup="true">
                                         Guests 
@@ -430,6 +430,7 @@
             <div class="hidden-xs col-sm-2 col-md-2"></div>
             <div class="col-xs-12 col-sm-8 col-md-8">
                 <div class="menu-spacer-dialog-box relative">
+                    <!--radio hack "overlapped labels" to reproduce button behaviour without js-->
                     <input class="d-none" type="radio" name="radio-menu-dialog-box" id="your-table" checked/>
                     <label id="your-table-label" class="btn dialog-box-menu uppercase no-padding" for="your-table" aria-haspopup="true">
                         Go To Your Table 
@@ -611,8 +612,9 @@
             <div class="hidden-xs col-sm-2 col-md-2"></div>
         </div>
     </section>
+    <!--footer absolute to allow dialogbox overflow-->
     <footer class="footer absolute container-fluid">
-        <!--footer-nav-->
+        <!--footer changing in smaller viewport to list of clickable lables-checkbox hack to reproduce button behaviour without js--> 
         <div class="row">
             <nav id="footer-nav">
                 <div class="col-xs-12 col-sm-6 col-md-3">
@@ -748,7 +750,6 @@
                 </div>
             </nav>
         </div>
-        <!--end-footer-nav-->
         <div class="row spacer">
             <div class="col-xs-12 col-md-3">
                 <div class="footer-element language-select text-alignment footer-lg">
